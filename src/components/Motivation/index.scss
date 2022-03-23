@@ -1,0 +1,26 @@
+@import '../../assets/styles/utils.scss';
+
+.mot_section {
+  background: $blueBg;
+  border: 1px solid $blueBorder;
+
+  .mot_img {
+    margin-top: 24px;
+    margin-bottom: 8px;
+  }
+
+  .list {
+    margin-top: 24px;
+
+    .item {
+      .item_img {
+        margin: 0 auto;
+        margin-bottom: 8px;
+      }
+    }
+
+    .item:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+}

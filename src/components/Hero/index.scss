@@ -1,0 +1,15 @@
+@import '../../assets/styles/utils.scss';
+
+.hero_section {
+  background-color: $white;
+  border: 1px solid $lightBorder;
+  padding-bottom: 0;
+
+  .chart {
+    margin: 24px 0;
+  }
+
+  .hero_img {
+    margin-top: 24px;
+  }
+}

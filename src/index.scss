@@ -1,0 +1,92 @@
+@import './assets/styles/utils.scss';
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  background: #fff8f4;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 368px;
+  padding: 4px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  padding: 24px 16px 16px;
+  border-radius: 12px;
+}
+
+.title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.3;
+  text-align: center;
+  color: $black;
+}
+
+.subtitle {
+  margin: 8px 0 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: $black;
+}
+
+.secondary_title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.38;
+  text-align: center;
+  color: $black;
+}
+
+.main_btn {
+  width: 336px;
+  height: 56px;
+  background: $blue;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  color: $white;
+  border: 1px solid transparent;
+  transition: $animation;
+
+  &:hover,
+  &:focus {
+    background: $buttonHover;
+    color: $blue;
+  }
+}

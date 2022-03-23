@@ -1,0 +1,51 @@
+@import '../../assets/styles/utils.scss';
+
+.header {
+  width: 100%;
+  padding: 8px 16px;
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (min-width: $mobile) {
+    padding: 8px 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .logo {
+    width: 122px;
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+
+    .headerBtn {
+      width: 48px;
+      height: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      margin: 0;
+      background: rgba(0, 0, 0, 0.05);
+      border: 1px solid transparent;
+      transition: $animation;
+
+      &:last-child {
+        margin-left: 8px;
+      }
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+
+      &:hover,
+      &:focus {
+        background: $buttonHover;
+      }
+    }
+  }
+}

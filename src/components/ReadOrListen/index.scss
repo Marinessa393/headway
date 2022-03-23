@@ -1,0 +1,62 @@
+@import '../../assets/styles/utils.scss';
+
+.ral_section {
+  background: $redBg;
+  border: 1px solid $redBg;
+  padding-bottom: 0;
+
+  .switcher {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: $black;
+      transition: $animation;
+      &.grey {
+        color: $lightText;
+      }
+    }
+    .switch_btns {
+      width: 116px;
+      height: 56px;
+      padding: 4px;
+      margin: 16px 16px 24px;
+      background: $white;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .btn {
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      border-radius: 40px;
+      border: 1px solid transparent;
+      transition: $animation;
+      img {
+        filter: none;
+        transition: $animation;
+      }
+      &:disabled {
+        background: #0066ff;
+        img {
+          filter: invert(1);
+        }
+      }
+    }
+  }
+
+  .source {
+    width: 336px;
+  }
+}
