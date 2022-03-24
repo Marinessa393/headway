@@ -1,6 +1,7 @@
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
+import Library from "./components/Library/Library";
 import Motivation from "./components/Motivation/Motivation";
 import ReadOrListen from "./components/ReadOrListen/ReadOrListen";
 import Reviews from "./components/Reviews/Reviews";
@@ -13,6 +14,7 @@ function App() {
       <Hero />
       <Motivation />
       <Summary />
+      <Library/>
       <ReadOrListen />
       <Reviews />
       <Footer/>

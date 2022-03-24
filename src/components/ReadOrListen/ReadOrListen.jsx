@@ -28,15 +28,15 @@ const ReadOrListen = () => {
           <p className={swipe ? 'grey' : ''}>Listen</p>
           <div className="switch_btns">
             <button type="button" className="btn" onClick={() => setListen()} disabled={!swipe}>
-              <img src={Audio} alt="listen"/>
+              <img src={Audio} alt="listen" width='24' height='24'/>
             </button>
             <button type="button" className="btn" onClick={() => setRead()} disabled={swipe}>
-              <img src={Text} alt="read"/>
+              <img src={Text} alt="read" width='24' height='24'/>
             </button>
           </div>
           <p className={swipe ? '' : 'grey'}>Read</p>
         </div>
-        <img src={swipe ? Read : Listen} alt="source" className="source"/>
+        <img src={swipe ? Read : Listen} alt="source" className="source" width='336' height='304'/>
       </div>
       
     </div>

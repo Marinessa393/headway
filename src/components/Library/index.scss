@@ -1,0 +1,85 @@
+@import '../../assets/styles/utils.scss';
+
+.library_section {
+  padding: 24px 0;
+  min-height: 150px;
+  background: $purpleBg;
+  border: 1px solid $purpleBg;
+  overflow: hidden;
+  .title {
+    padding: 0 16px;
+  }
+  .subtitle {
+    padding: 0 16px;
+  }
+
+  .wrapper {
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+
+    .shelf {
+      min-width: 420px;
+      display: flex;
+      margin: 0 16px 0 12px;
+      &.second {
+        min-width: 504px;
+      }
+      &::-webkit-scrollbar {
+        width: 0;
+      }
+      .elem {
+        position: relative;
+        box-sizing: border-box;
+        width: 72px;
+        height: 108px;
+        margin: 3px 6px;
+        background: transparent;
+        transition: $animation;
+        &.disable {
+          background: #eeebebbd;
+        }
+
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+        }
+      }
+    }
+  }
+  .btns {
+    padding: 0 16px;
+    width: 808px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 28px -4px -4px;
+
+    button {
+      margin: 4px;
+      padding: 10px 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $white;
+      border: 1px solid $lightBorder;
+      border-radius: 8px;
+      transition: $animation;
+
+      &.active {
+        background: $blueBg;
+        border: 1px solid $blueBorder;
+      }
+
+      span {
+        margin-left: 6px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.46;
+        color: $black;
+      }
+    }
+  }
+}

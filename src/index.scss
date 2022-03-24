@@ -73,6 +73,8 @@ ol {
 }
 
 .main_btn {
+  position: fixed;
+  bottom: 20px;
   width: 336px;
   height: 56px;
   background: $blue;
@@ -88,5 +90,9 @@ ol {
   &:focus {
     background: $buttonHover;
     color: $blue;
+  }
+
+  @media (min-width: $mobile) {
+    position: static;
   }
 }

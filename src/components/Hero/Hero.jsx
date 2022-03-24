@@ -26,7 +26,7 @@ const Hero = () => {
           />
         </div>
         <button className="main_btn">Get Started</button>
-        <img src={Books} alt="hero-img" className="hero_img"/>
+        <img src={Books} alt="hero-img" className="hero_img" width='336' height='304'/>
       </div>
     </div>
   )
