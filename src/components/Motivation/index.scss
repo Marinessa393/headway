@@ -18,6 +18,13 @@
         margin-bottom: 8px;
       }
     }
+    @media (min-width: $desktop) {
+      display: flex;
+
+      .item {
+        width: 33.33333%;
+      }
+    }
 
     .item:not(:last-child) {
       margin-bottom: 32px;

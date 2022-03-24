@@ -11,12 +11,23 @@
   .list {
     margin-top: 24px;
 
+    @media (min-width: $desktop) {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      flex-wrap: wrap;
+
+      .item {
+        width: calc(50% - 6px);
+      }
+    }
+
     .item {
+      margin-bottom: 16px;
+      padding: 12px;
       background: $white;
       border: 1px solid $lightBorder;
       border-radius: 12px;
-      padding: 12px;
-      margin-bottom: 16px;
 
       p {
         font-weight: 400;
@@ -31,8 +42,8 @@
       align-items: center;
 
       p {
-        color: $lightText;
         margin: 0 4px 0 8px;
+        color: $lightText;
       }
     }
   }
@@ -43,19 +54,19 @@
     margin: -6px;
 
     .item {
-      background: $white;
-      border: 1px solid $lightBorder;
-      border-radius: 12px;
-      padding: 12px;
       width: calc(50% - 6px);
       margin: 6px;
       padding: 20px;
+      background: $white;
       text-align: center;
+      border: 1px solid $lightBorder;
+      border-radius: 12px;
 
       .store {
-        margin: 0;
         display: flex;
         justify-content: center;
+        margin: 0;
+
         span {
           font-weight: 700;
           font-size: 28px;

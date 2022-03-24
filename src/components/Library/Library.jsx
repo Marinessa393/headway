@@ -4,7 +4,9 @@ import './index.scss'
 
 const Library = () => {
   const [filter, setFilter] = useState([]);
-  console.log(filter);
+
+  const width = window.innerWidth;
+  console.log(width);
 
   const toggleGenre = (cat) => {
     if (cat === 'all') {
@@ -58,7 +60,8 @@ const Library = () => {
             ))}
           </div>
         </div>
-        <div className="wrapper">
+        {width < 1024 ? <>
+          <div className="wrapper">
           <div className="shelf">
           {shelf.slice(0, 5).map(el => (
             <div className={`elem ${el.genre}`} key={el.id}>
@@ -66,8 +69,8 @@ const Library = () => {
               </div>
           ))}
           </div>
-                    </div>
-            <div className="wrapper">
+        </div>
+        <div className="wrapper">
           <div className="shelf second">
           {shelf.slice(5, 11).map(el => (
             <div className={`elem ${el.genre}`} key={el.id}>
@@ -85,6 +88,26 @@ const Library = () => {
             ))}
           </div>
           </div>
+        </> : <>
+            <div className="wrapper">
+          <div className="shelf">
+          {shelf.slice(0, 8).map(el => (
+            <div className={`elem ${el.genre}`} key={el.id}>
+            <img src={el.src} alt="book" width='72' height='108'/>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="wrapper">
+          <div className="shelf">
+          {shelf.slice(8).map(el => (
+            <div className={`elem ${el.genre}`} key={el.id}>
+              <img src={el.src} alt="book" width='72' height='108'/>
+              </div>
+          ))}
+              </div>
+              </div>
+        </>}
       </div>
       
     </div>

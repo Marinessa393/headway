@@ -7,6 +7,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
   background: #fff8f4;
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+
   &.open {
     overflow: hidden;
   }
@@ -24,9 +30,9 @@ img {
 
 ul,
 ol {
-  list-style-type: none;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .App {
@@ -41,6 +47,9 @@ ol {
   padding: 4px 0;
   margin-left: auto;
   margin-right: auto;
+  @media (min-width: $desktop) {
+    max-width: 1024px;
+  }
 }
 
 .section {
@@ -55,6 +64,10 @@ ol {
   line-height: 1.3;
   text-align: center;
   color: $black;
+  @media (min-width: $desktop) {
+    width: 100%;
+    font-size: 40px;
+  }
 }
 
 .subtitle {
@@ -82,15 +95,15 @@ ol {
   max-width: 336px;
   height: 56px;
   background: $blue;
-  border-radius: 8px;
   font-weight: 600;
   font-size: 16px;
   line-height: 1;
   color: $white;
   border: 1px solid transparent;
+  border-radius: 8px;
+  box-shadow: 0 10px 16px 7px #00000066;
   transition: $animation;
   z-index: 99;
-  box-shadow: 0 10px 16px 7px #00000066;
 
   &:hover,
   &:focus {
@@ -100,5 +113,6 @@ ol {
 
   @media (min-width: $mobile) {
     position: static;
+    box-shadow: none;
   }
 }

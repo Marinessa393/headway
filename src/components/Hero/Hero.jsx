@@ -16,6 +16,7 @@ const Hero = () => {
   return (
     <div className="container">
       <div className="section hero_section">
+        <div className="breakpoint">
         <h2 className="title">Become a better you</h2>
         <p className="subtitle">with 15-min bite-sized reads and audios of the world’s best nonfiction books</p>
         <div className="chart">
@@ -26,6 +27,7 @@ const Hero = () => {
           />
         </div>
         <button className="main_btn">Get Started</button>
+        </div>
         <img src={Books} alt="hero-img" className="hero_img" width='336' height='304'/>
       </div>
     </div>

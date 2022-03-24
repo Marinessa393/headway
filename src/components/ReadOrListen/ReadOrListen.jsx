@@ -22,6 +22,7 @@ const ReadOrListen = () => {
   return (
     <div className="container" id='ral'>
       <div className="section ral_section">
+        <div className='wrap'>
         <h2 className="title">Read or Listen</h2>
         <p className="subtitle">Commuting, jogging, or stuck in line? Enjoy the best books in a condensed format. Summaries have an audio version, narrated by professional voice actors.</p>
         <div className="switcher">
@@ -36,7 +37,8 @@ const ReadOrListen = () => {
           </div>
           <p className={swipe ? '' : 'grey'}>Read</p>
         </div>
-        <img src={swipe ? Read : Listen} alt="source" className="source" width='336' height='304'/>
+        </div>
+        <img src={swipe ? Read : Listen} alt="source" className="source"/>
       </div>
       
     </div>

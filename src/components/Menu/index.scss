@@ -1,18 +1,17 @@
 @import '../../assets/styles/utils.scss';
 
 .menu_container {
-  background: $lightText;
-  margin-top: 64px;
   position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
-  z-index: 110;
+  margin-top: 64px;
+  background: $lightText;
   opacity: 0;
-  transition: $animation;
-  pointer-events: initial;
   transform: translateX(150%);
-  border-top: 1px solid $lightText;
+  transition: $animation;
+  z-index: 110;
+  pointer-events: initial;
 
   .navigation {
     background: #fff8f4;
@@ -21,32 +20,47 @@
     transition-delay: 200ms;
   }
   &.open {
-    opacity: 1;
     height: 100vh;
-    pointer-events: none;
+    opacity: 1;
     transform: translateX(0);
+    pointer-events: none;
 
     .navigation {
-      height: 50vh;
+      height: fit-content;
       opacity: 1;
       pointer-events: initial;
     }
   }
 
+  @media (min-width: $desktop) {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .navlist {
     margin-top: 20px;
+    margin-bottom: 15px;
+    padding: 0 4px;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.38;
     color: $black;
-    padding: 0 4px;
     visibility: hidden;
     @media (min-width: $mobile) {
       text-align: center;
     }
+    @media (min-width: $desktop) {
+      font-size: 24px;
+    }
 
     li {
       margin: 7px 0;
+      cursor: pointer;
+
+      .active {
+        color: $lightText;
+      }
     }
   }
 

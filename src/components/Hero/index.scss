@@ -2,15 +2,44 @@
 
 .hero_section {
   margin-top: 64px;
+  padding-bottom: 0;
   background-color: $white;
   border: 1px solid $lightBorder;
-  padding-bottom: 0;
+
+  @media (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+    .breakpoint {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 470px;
+      padding-bottom: 12px;
+    }
+
+    .subtitle {
+      width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 
   .chart {
     margin: 24px 0;
+    @media (min-width: $desktop) {
+      margin-top: 30px;
+    }
   }
 
   .hero_img {
     margin-top: 24px;
+    @media (min-width: $desktop) {
+      width: 520px;
+      height: auto;
+      margin-top: 0;
+    }
   }
 }
