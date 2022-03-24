@@ -6,3 +6,5 @@ Estimate ~ 12 hours
 
 One little thing i didn't fix: there are some troubles in Library section while changing viewport width. To see correct view please refresh the page.
 I promise to fix it ASAP :)
+
+###UPD: Fixed
