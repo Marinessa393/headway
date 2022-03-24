@@ -14,6 +14,7 @@
   }
 
   .wrapper {
+    height: fit-content;
     overflow-x: scroll;
     &::-webkit-scrollbar {
       width: 0;
