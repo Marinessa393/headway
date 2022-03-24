@@ -7,6 +7,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
   background: #fff8f4;
+  &.open {
+    overflow: hidden;
+  }
 }
 
 *,
@@ -75,7 +78,8 @@ ol {
 .main_btn {
   position: fixed;
   bottom: 20px;
-  width: 336px;
+  width: 95%;
+  max-width: 336px;
   height: 56px;
   background: $blue;
   border-radius: 8px;
@@ -85,6 +89,8 @@ ol {
   color: $white;
   border: 1px solid transparent;
   transition: $animation;
+  z-index: 99;
+  box-shadow: 0 10px 16px 7px #00000066;
 
   &:hover,
   &:focus {

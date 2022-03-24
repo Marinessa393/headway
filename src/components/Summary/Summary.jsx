@@ -7,7 +7,7 @@ import Phone from '../../assets/iPhone.png'
 
 const Summary = () => {
   return (
-    <div className="container">
+    <div className="container" id='summary'>
       <div className="section summary_section">
         <h2 className="title">Summary is the new black</h2>
         <p className="subtitle">Use summaries: comprehensive 15-min abstracts from nonfiction books with the main concepts and recommendations.</p>

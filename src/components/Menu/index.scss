@@ -1,0 +1,56 @@
+@import '../../assets/styles/utils.scss';
+
+.menu_container {
+  background: $lightText;
+  margin-top: 64px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 110;
+  opacity: 0;
+  transition: $animation;
+  pointer-events: initial;
+  transform: translateX(150%);
+  border-top: 1px solid $lightText;
+
+  .navigation {
+    background: #fff8f4;
+    opacity: 0;
+    transition: $animation;
+    transition-delay: 200ms;
+  }
+  &.open {
+    opacity: 1;
+    height: 100vh;
+    pointer-events: none;
+    transform: translateX(0);
+
+    .navigation {
+      height: 50vh;
+      opacity: 1;
+      pointer-events: initial;
+    }
+  }
+
+  .navlist {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.38;
+    color: $black;
+    padding: 0 4px;
+    visibility: hidden;
+    @media (min-width: $mobile) {
+      text-align: center;
+    }
+
+    li {
+      margin: 7px 0;
+    }
+  }
+
+  &.open .navlist {
+    visibility: visible;
+  }
+}

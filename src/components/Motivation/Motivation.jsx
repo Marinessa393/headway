@@ -6,7 +6,7 @@ import MotivationImg3 from '../../assets/motImg3.png'
 
 const Motivation = () => {
   return (
-    <div className="container">
+    <div className="container" id='benefits'>
       <div className="section mot_section">
         <h2 className="title">Get smarter with the least effort</h2>
         <ul className="list">

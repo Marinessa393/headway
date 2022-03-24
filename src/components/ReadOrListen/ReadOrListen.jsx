@@ -20,7 +20,7 @@ const ReadOrListen = () => {
     }
   }
   return (
-    <div className="container">
+    <div className="container" id='ral'>
       <div className="section ral_section">
         <h2 className="title">Read or Listen</h2>
         <p className="subtitle">Commuting, jogging, or stuck in line? Enjoy the best books in a condensed format. Summaries have an audio version, narrated by professional voice actors.</p>

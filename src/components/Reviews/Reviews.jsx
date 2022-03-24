@@ -13,7 +13,7 @@ import ig from '../../assets/instagram-g.png'
 
 const Reviews = () => {
   return (
-    <div className="container">
+    <div className="container" id='reviews'>
       <div className="section reviews_section">
         <h2 className="title">People love the Headway app</h2>
         <p className="subtitle">Become a member of our global community of

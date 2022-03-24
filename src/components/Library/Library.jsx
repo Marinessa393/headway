@@ -44,7 +44,7 @@ const Library = () => {
   };
   
   return (
-    <div className='container'>
+    <div className='container' id="library">
       <div className="section library_section">
         <h2 className="title">Determine your goal and go ahead!</h2>
         <p className="subtitle">Learn something new every day from Self-Growth, Happiness, Money, Health, and many other categories. Benefit from unlimited access to world best thoughts.</p>

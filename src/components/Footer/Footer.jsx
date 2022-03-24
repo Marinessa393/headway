@@ -7,7 +7,7 @@ import IG from '../../assets/instagram-b.png'
 
 const Footer = () => {
   return (
-    <div className="container">
+    <div className="container" id='contacts'>
       <div className="section footer_section">
         <img src={Logo} alt="logo" width='132' height='24'/>
         <h2 className="title">Empower yourself with the best books insights</h2>
