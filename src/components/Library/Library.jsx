@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react'
+import { useMediaQuery } from 'react-responsive';
 import { buttons, shelf } from './arrays'
 import './index.scss'
 
 const Library = () => {
   const [filter, setFilter] = useState([]);
-
-  const width = window.innerWidth;
-  console.log(width);
+  const isTabletOrMobile = useMediaQuery({ maxWidth: 1023 });
 
   const toggleGenre = (cat) => {
     if (cat === 'all') {
@@ -60,7 +59,7 @@ const Library = () => {
             ))}
           </div>
         </div>
-        {width < 1024 ? <>
+        {isTabletOrMobile ? <>
           <div className="wrapper">
           <div className="shelf">
           {shelf.slice(0, 5).map(el => (

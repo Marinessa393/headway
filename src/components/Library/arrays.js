@@ -104,7 +104,7 @@ export const shelf = [
   },
   {
     id: 16,
-    genre: 'heath',
+    genre: 'health',
     src: book16
   }
 ]
